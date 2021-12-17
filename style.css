@@ -1,0 +1,94 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+.hero
+{
+    height: 100%;
+    width: 100%;
+    background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),url(banner.jpg);
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+}
+
+h1
+{
+    font-size: 12px;
+    text-align: center;
+}
+
+p
+{
+    font-size: 12px;
+    text-align: center;
+}
+
+.img-sec
+{
+    display: block;
+    height: 10%;
+    width: 10%;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+.form-box
+{
+    width: 380px;
+    height: 380px;
+    position: relative;
+    margin: 6% auto;
+    background: #fff;
+    padding: 5px;
+    overflow: hidden;
+    border-radius: 25px;
+    opacity: 90%;
+}
+
+
+.input-group
+{
+    top: 180px;
+    position: absolute;
+    width: 280px;
+    transition: .25s;
+}
+
+.input-field
+{
+    width: 100%;
+    padding: 10px 0;
+    margin: 5px 0;
+    border-left: 0;
+    border-top: 0;
+    border-right: 0;
+    border-bottom: 1px solid #999;
+}
+
+.login_btn
+{
+    width: 85%;
+    padding: 10px 30px;
+    cursor: pointer;
+    display: block;
+    margin: auto;
+    background: linear-gradient(to right, #00c2fd, #86c1fc);
+    border: 0;
+    outline: none;
+    border-radius: 30px;
+}
+
+.pw-checkbox
+{
+    margin: 30px 10px 30px 0;
+}
+
+span
+{
+    font-size: 12px;
+    font-family: sans-serif;
+}

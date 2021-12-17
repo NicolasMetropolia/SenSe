@@ -1,0 +1,75 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <style>
+        .flex-container {
+            display: flex;
+        }
+        .flex-container > div {
+            margin: 10px;
+            padding: 20px;
+        }
+        .float-child {
+            width: 50%;
+            float: left;
+            padding: 20px;
+        }
+        .button {
+            background-color: #0082e6;
+            border: none;
+            color: white;
+            padding: 15px 32px;
+            text-align: left;
+            display: block;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        html, body {
+            margin: 0;
+            padding: 0;
+            font-family: sans-serif;
+        }
+        button:hover{
+            background-color: #1b9bff;
+        }
+    </style>
+    <title>Project</title>
+</head>
+
+<body>
+<h1 style="background-color:#0082e6;">
+            <button class="button" onclick="history.back()">Back</button>
+            <center style="color:white;">Sensor Activity</center>
+
+
+</h1>
+<p>
+<Center><b>New data is recorded every .5 seconds and shown here with a refresh.</b></Center>
+</p>
+<div class="flex-container">
+<div class="float-child">
+    <h2 style="text-align: center;">Messages with no movement</h2>
+<% for (const message of messages) {%>
+
+        <% const string = "detected" %>
+                <%if(!message.includes(string)) { %>
+                    <center ><%= message  %></center>
+                <%}  %>
+                    <%}%>
+            </div>
+<div class="float-child">
+    <h2 style="text-align: center"> Messages with movement</h2>
+    <% for (const message of messages) {%>
+
+        <% const string = "detected" %>
+        <%if(message.includes(string)) { %>
+            <center style="color:red"><%= message  %></center>
+        <%}  %>
+    <%}%>
+</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!doctype html>
+<html>
+<head>
+    <title>SenSe</title>
+    <link rel="shortcut icon" type="image/png" href="sec.png"/>
+    <link rel="stylesheet" href="style.css">
+    <script src = "login.js"></script>
+</head>
+
+<body>
+<div class="hero">
+    <div class="form-box">
+    <div class="button-box">
+        <body>
+            <br>
+            <h1> Welcome to SenSe</h1>
+        <p>Please sign in using provided credentials</p>
+            <br>
+        <img class="img-sec" src="sec.png">
+            <br>
+            <br>
+        </body>
+
+    </div>
+    <form id="login" class="input group" action="home.html">
+        <input type="text" class="input-field" placeholder="User Id" id="username" required>
+        <input type="password" class="input-field" placeholder="Enter Password" id="password"  required>
+        <br>
+        <input type="checkbox" class="pw-checkbox" onclick="showPassW()"><span>Show Password</span>
+        <br>
+        <button type="submit" class="login_btn" onclick="validate()">Log In</button>
+</form>
+
+    </div>
+
+        </div>
+
+</body>
+</html>
